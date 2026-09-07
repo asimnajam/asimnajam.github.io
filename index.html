@@ -1,22 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Syed Asim Najam | Senior iOS Engineer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Syed Asim Najam — Senior iOS Engineer building production iOS applications with Swift, SwiftUI and modern Apple technologies.">
+  <title>Syed Asim Najam — Senior iOS Engineer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="nav">
+    <a class="mark" href="#top" aria-label="Home">SAN</a>
+    <nav>
+      <a href="#work">Work</a><a href="#experience">Experience</a><a href="#about">About</a>
+      <a class="nav-cta" href="Syed-Asim-Najam-CV.pdf">CV ↗</a>
+    </nav>
+  </header>
 
-    <h1>Syed Asim Najam</h1>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Senior iOS Engineer · Poland</p>
+        <h1>I build iOS products that stay <em>fast, clear & maintainable.</em></h1>
+        <p class="lede">Production iOS engineering across architecture, real-time networking, payments, testing and release — with Swift, SwiftUI and UIKit.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">Selected work</a>
+          <a class="button" href="Syed-Asim-Najam-CV.pdf">View CV</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div>
+        <div class="code-window">
+          <div class="code-top"><span></span><span></span><span></span></div>
+          <pre><code><b>actor</b> ConnectionStore {
+  <b>private var</b> state: State
 
-    <h2>Senior iOS Engineer</h2>
+  <b>func</b> stream() <b>async throws</b> {
+    <i>// small interfaces,
+    // predictable behaviour</i>
+  }
+}</code></pre>
+        </div>
+      </div>
+      <div class="scroll-note">Scroll to explore <span>↓</span></div>
+    </section>
 
-    <p>
-        I build scalable and maintainable iOS applications
-        using Swift, SwiftUI and modern iOS technologies.
-    </p>
+    <section class="proof strip reveal">
+      <p>Swift</p><p>SwiftUI</p><p>Swift Concurrency</p><p>UIKit</p><p>XCTest</p><p>Modular Architecture</p>
+    </section>
 
+    <section id="work" class="section work">
+      <div class="section-head reveal"><p class="eyebrow">Selected engineering work</p><h2>Problems I like solving.</h2></div>
+      <article class="case reveal">
+        <div class="case-no">01</div><div><h3>Modular WebSocket networking</h3><p>Designed a reusable WebSocket layer for real-time application features, keeping integration simple for feature teams and the networking boundary testable.</p><div class="tags"><span>Swift</span><span>WebSockets</span><span>Architecture</span></div></div>
+      </article>
+      <article class="case reveal">
+        <div class="case-no">02</div><div><h3>Legacy architecture modernization</h3><p>Moved lifecycle responsibilities from AppDelegate to UIScene and decomposed a monolithic app-flow manager into smaller, focused components across Swift and Objective-C code.</p><div class="tags"><span>UIKit</span><span>Objective-C</span><span>Refactoring</span></div></div>
+      </article>
+      <article class="case reveal">
+        <div class="case-no">03</div><div><h3>Secure mobile payments</h3><p>Worked on a digital payments product supporting transfers, payments and messaging, including certificate pinning, AES-based encryption/decryption, API contracts and Realm migrations.</p><div class="tags"><span>Security</span><span>AES</span><span>Realm</span><span>REST</span></div></div>
+      </article>
+      <article class="case reveal">
+        <div class="case-no">04</div><div><h3>Feature modularization with Swift Package Manager</h3><p>Built a local Swift Package for an API-driven feature, defined its public interface and dependencies, migrated existing functionality and added dedicated unit-test coverage.</p><div class="tags"><span>SPM</span><span>Modularization</span><span>Unit Tests</span></div></div>
+      </article>
+    </section>
+
+    <section id="experience" class="section experience">
+      <div class="section-head reveal"><p class="eyebrow">Experience</p><h2>Building iOS since 2015.</h2></div>
+      <div class="timeline">
+        <article class="job reveal"><div class="date">2023 — now</div><div><h3>Grand Parade <span>Senior iOS Developer</span></h3><p>Production iOS development across SwiftUI, concurrency, legacy modernization, networking, observability and release ownership.</p></div></article>
+        <article class="job reveal"><div class="date">2022 — 2023</div><div><h3>Motorola Solutions <span>Senior iOS Developer</span></h3><p>Enterprise iOS, MVC→MVVM migration, reusable UI, SOAP/WCF integrations, testing and CI/CD improvements.</p></div></article>
+        <article class="job reveal"><div class="date">2020 — 2022</div><div><h3>Foree <span>Senior iOS Developer</span></h3><p>Fintech and payments: secure communication, Realm persistence, API collaboration, UAT and production quality.</p></div></article>
+        <article class="job reveal"><div class="date">2015 — 2020</div><div><h3>Kiddom <span>iOS Developer → Senior iOS Developer</span></h3><p>EdTech for students, teachers and admins. Progressed from core UIKit development to end-to-end ownership, real-time communication and architecture work.</p></div></article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about-copy reveal"><p class="eyebrow">About</p><h2>Engineering beyond the feature.</h2><p>I’m an iOS engineer who enjoys the parts around feature delivery too: shaping API contracts, untangling architecture, improving testability, investigating production issues and making releases predictable.</p><p>I’ve worked with distributed product and engineering teams across consumer, fintech, enterprise and education products.</p></div>
+      <div class="stack reveal"><p>Core stack</p><ul><li>Swift / SwiftUI / UIKit</li><li>Swift Concurrency / Combine</li><li>MVVM / Clean Architecture / DI</li><li>REST / WebSockets / Realm</li><li>XCTest / UI Testing / Instruments</li><li>SPM / CI/CD / TestFlight</li></ul></div>
+    </section>
+
+    <section class="contact section reveal">
+      <p class="eyebrow">Let’s build something good</p><h2>Looking for my next iOS challenge.</h2>
+      <p>Interested in Senior iOS Engineer opportunities where product thinking and engineering quality both matter.</p>
+      <div class="actions"><a class="button primary" href="mailto:asim.najam021@gmail.com">Email me</a><a class="button" href="Syed-Asim-Najam-CV.pdf">Download CV</a></div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Syed Asim Najam</span><span>Built with HTML, CSS & a little JavaScript.</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
