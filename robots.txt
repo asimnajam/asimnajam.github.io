@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asimnajam.github.io/sitemap.xml
