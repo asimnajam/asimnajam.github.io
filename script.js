@@ -15,3 +15,13 @@ if (art && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     art.style.transform = `translateY(${y}px) rotate(2deg)`;
   }, { passive: true });
 }
+
+const header = document.querySelector('.nav');
+const menuToggle = document.querySelector('.menu-toggle');
+const setMenu = (open) => {
+  header.classList.toggle('open', open);
+  menuToggle.setAttribute('aria-expanded', String(open));
+};
+menuToggle.addEventListener('click', () => setMenu(!header.classList.contains('open')));
+header.querySelectorAll('nav a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });

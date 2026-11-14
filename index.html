@@ -3,16 +3,31 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Syed Asim Najam — Senior iOS Engineer building production iOS applications with Swift, SwiftUI, The Composable Architecture, GraphQL and reliable LLM-powered features.">
-  <title>Syed Asim Najam — Senior iOS Engineer</title>
+  <title>Syed Asim Najam — Senior iOS Developer</title>
+  <meta name="description" content="Senior iOS Developer in Kraków with 10+ years shipping Swift and SwiftUI apps across gaming, public safety, fintech and education — and building LLM features that are validated, measured and work offline.">
+  <link rel="canonical" href="https://asimnajam.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://asimnajam.github.io/">
+  <meta property="og:title" content="Syed Asim Najam — Senior iOS Developer">
+  <meta property="og:description" content="10+ years shipping iOS apps with Swift and SwiftUI. TCA, GraphQL, Swift 6 and LLM features you can trust.">
+  <meta property="og:image" content="https://asimnajam.github.io/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Syed Asim Najam, Senior iOS Developer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#080b10">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <header class="nav">
     <a class="mark" href="#top" aria-label="Syed Asim Najam — home"><img src="logo.svg" alt="" width="40" height="40"></a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav id="site-nav">
       <a href="#work">Work</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a>
       <a target="_blank" rel="noopener" href="https://github.com/asimnajam">GitHub</a>
       <a class="nav-cta" target="_blank" rel="noopener" href="Syed-Asim-Najam-CV.pdf">CV ↗</a>
@@ -23,11 +38,11 @@
     <section class="hero">
       <div class="hero-copy reveal">
         <p class="hero-name">Syed Asim Najam</p>
-        <p class="eyebrow">Senior iOS Engineer · Kraków, Poland</p>
-        <h1>I build iOS products designed to <em>scale and built to last.</em></h1>
-        <p class="lede">Production iOS engineering across architecture, real-time networking, payments, testing and release — with Swift, SwiftUI and UIKit. Lately: shipping LLM features that are validated, measured and work offline.</p>
+        <p class="eyebrow">Senior iOS Developer · Kraków, Poland</p>
+        <h1>I build iOS apps that last, <em>and AI features you can trust.</em></h1>
+        <p class="lede">10+ years shipping production iOS apps in gaming, public safety, fintech and education with Swift, SwiftUI and UIKit. Lately: LLM features that are validated in code, measured and still work offline.</p>
         <div class="actions">
-          <a class="button primary" href="#work">Selected work</a>
+          <a class="button primary" href="#projects">See my projects</a>
           <a class="button" target="_blank" rel="noopener" href="Syed-Asim-Najam-CV.pdf">View CV</a>
         </div>
       </div>
@@ -52,25 +67,38 @@
       <p>Swift</p><p>SwiftUI</p><p>Swift Concurrency</p><p>UIKit</p><p>TCA</p><p>GraphQL</p><p>LLM Integration</p><p>Swift Testing</p><p>Modular Architecture</p>
     </section>
 
+    <section class="impact reveal" aria-label="Highlights">
+      <div><strong>10+</strong><span>years shipping production iOS apps</span></div>
+      <div><strong>32% → 53%</strong><span>app-wide test coverage, in an effort I initiated and led</span></div>
+      <div><strong>Swift 6</strong><span>migration of an app and its packages to strict concurrency</span></div>
+      <div><strong>4</strong><span>industries: gaming, public safety, fintech, education</span></div>
+    </section>
+
     <section id="work" class="section work">
       <div class="section-head reveal"><p class="eyebrow">Selected engineering work</p><h2>Problems I like solving.</h2></div>
       <article class="case reveal">
-        <div class="case-no">01</div><div><h3>Modular WebSocket networking</h3><p>Designed a reusable WebSocket layer for real-time application features, keeping integration simple for feature teams and the networking boundary testable.</p><div class="tags"><span>Swift</span><span>WebSockets</span><span>Architecture</span></div></div>
+        <div class="case-no">01</div><div><h3>Server-driven navigation, shared across apps</h3><p>Built server-driven navigation in SwiftUI and extracted it into a shared Swift Package, reused across multiple localized sportsbook and gaming apps with content managed in the ContentStack headless CMS.</p><div class="tags"><span>SwiftUI</span><span>SPM</span><span>Server-driven UI</span><span>Headless CMS</span></div></div>
       </article>
       <article class="case reveal">
-        <div class="case-no">02</div><div><h3>Legacy architecture modernization</h3><p>Moved lifecycle responsibilities from AppDelegate to UIScene and decomposed a monolithic app-flow manager into smaller, focused components across Swift and Objective-C code.</p><div class="tags"><span>UIKit</span><span>Objective-C</span><span>Refactoring</span></div></div>
+        <div class="case-no">02</div><div><h3>Raising test coverage from 32% to 53%</h3><p>Initiated and led an app-wide testing effort: planned and wrote unit tests across app features and expanded UI tests for key user flows, so the team can change code with confidence.</p><div class="tags"><span>XCTest</span><span>Swift Testing</span><span>XCUITest</span></div></div>
       </article>
       <article class="case reveal">
-        <div class="case-no">03</div><div><h3>Secure mobile payments</h3><p>Worked on a digital payments product supporting transfers, payments and messaging, including certificate pinning, AES-based encryption/decryption, API contracts and Realm migrations.</p><div class="tags"><span>Security</span><span>AES</span><span>Realm</span><span>REST</span></div></div>
+        <div class="case-no">03</div><div><h3>Migrating to Swift 6</h3><p>Helped migrate the app and its Swift packages from Swift 5 to Swift 6, resolving concurrency errors, actor isolation issues and <code>Sendable</code> conformance problems.</p><div class="tags"><span>Swift 6</span><span>Actors</span><span>Sendable</span><span>Strict Concurrency</span></div></div>
       </article>
       <article class="case reveal">
-        <div class="case-no">04</div><div><h3>Feature modularization with Swift Package Manager</h3><p>Built a local Swift Package for an API-driven feature, defined its public interface and dependencies, migrated existing functionality and added dedicated unit-test coverage.</p><div class="tags"><span>SPM</span><span>Modularization</span><span>Unit Tests</span></div></div>
+        <div class="case-no">04</div><div><h3>Real-time WebSocket client</h3><p>Designed a modular WebSocket layer on <code>URLSessionWebSocketTask</code>, Swift Concurrency and <code>AsyncSequence</code>: a reusable foundation for real-time features, first used to show live promotional messages.</p><div class="tags"><span>WebSockets</span><span>AsyncSequence</span><span>Architecture</span></div></div>
       </article>
       <article class="case reveal">
-        <div class="case-no">05</div><div><h3>AI-assisted dependency risk workflow</h3><p>Built a workflow with Python and Codex that finds outdated packages, analyses potential breaking changes, ranks dependencies by severity and notifies the team through Slack.</p><div class="tags"><span>Python</span><span>Codex</span><span>Automation</span><span>Slack</span></div></div>
+        <div class="case-no">05</div><div><h3>Legacy architecture modernization</h3><p>Moved lifecycle responsibilities from AppDelegate to UIScene, broke a monolithic app-flow manager into small testable components, and led MVC → MVVM migrations across Swift and Objective-C code.</p><div class="tags"><span>UIKit</span><span>Objective-C</span><span>MVVM</span><span>Refactoring</span></div></div>
       </article>
       <article class="case reveal">
-        <div class="case-no">06</div><div><h3>Observability and release ownership</h3><p>Built New Relic dashboards so Product Owners and engineers can track feature performance, and act as rotating Release Captain: scope, merge-request verification, release tags and TestFlight builds.</p><div class="tags"><span>New Relic</span><span>TestFlight</span><span>Release Management</span></div></div>
+        <div class="case-no">06</div><div><h3>Secure mobile payments</h3><p>Delivered split payments in a consumer payments app, maintained the company's payment SDK, and implemented certificate pinning, AES encryption for local data and RSA encryption for API payloads.</p><div class="tags"><span>Security</span><span>AES / RSA</span><span>Payment SDK</span><span>Realm</span></div></div>
+      </article>
+      <article class="case reveal">
+        <div class="case-no">07</div><div><h3>AI-assisted dependency reviews</h3><p>Automated Swift Package dependency reviews with Python and Codex, collecting available updates and compatibility risks into a single Slack report so the team can prioritise upgrades.</p><div class="tags"><span>Python</span><span>Codex</span><span>Automation</span><span>Slack</span></div></div>
+      </article>
+      <article class="case reveal">
+        <div class="case-no">08</div><div><h3>Releases, observability and mentoring</h3><p>Coordinate releases as Release Captain (readiness, tags, TestFlight builds, post-release crash monitoring), built New Relic dashboards for feature performance, and mentor new iOS developers as an onboarding buddy.</p><div class="tags"><span>TestFlight</span><span>New Relic</span><span>Mentoring</span></div></div>
       </article>
     </section>
 
@@ -81,6 +109,11 @@
         <div class="project-top"><p class="project-kind">LLM · SwiftUI · Swift Concurrency</p><a target="_blank" rel="noopener" href="https://github.com/asimnajam/AskAI">View on GitHub ↗</a></div>
         <h3>AskAI — shipping LLM features reliably</h3>
         <p>A SwiftUI football app with three AI features: match summaries, natural-language search and a streaming chat assistant. It's built to show what shipping an LLM feature takes beyond the API call: structured output, validation, guardrails, fallbacks, evals and latency measurement.</p>
+        <div class="phones phones-featured">
+          <figure class="phone"><img src="images/askai-summary.gif" width="300" height="652" loading="lazy" alt="AskAI turning match data into a validated AI summary card"><figcaption>Match summary</figcaption></figure>
+          <figure class="phone"><img src="images/askai-search.gif" width="300" height="652" loading="lazy" alt="AskAI smart search turning a sentence into removable filter chips"><figcaption>Smart search</figcaption></figure>
+          <figure class="phone"><img src="images/askai-chat.gif" width="300" height="652" loading="lazy" alt="AskAI streaming football chat assistant"><figcaption>Streaming chat</figcaption></figure>
+        </div>
         <div class="project-grid">
           <ul class="points">
             <li><b>Structured output, validated in code.</b> Answers are JSON constrained by a schema, then decoded and checked (bullet count, length, real players) before anything is shown.</li>
@@ -106,63 +139,87 @@
         <div class="tags"><span>Gemini API</span><span>Foundation Models</span><span>Streaming</span><span>JSON Schema</span><span>Prompt Evals</span><span>Swift Testing</span><span>SPM</span></div>
       </article>
 
-      <div class="project-pair">
-        <article class="project reveal">
-          <div class="project-top"><p class="project-kind">The Composable Architecture</p><a target="_blank" rel="noopener" href="https://github.com/asimnajam/ShoppingApp">GitHub ↗</a></div>
-          <h3>ShoppingApp</h3>
-          <p>A SwiftUI shop built with TCA: a live product catalogue, search, product details and a persistent cart.</p>
-          <pre class="snippet"><code>ShopFeature
-├─ ProductListFeature
-│  └─ Path: ProductDetailFeature
-└─ CartFeature</code></pre>
-          <ul class="points">
-            <li><b>Feature composition</b> with <code>Scope</code>, <code>forEach</code> and delegate actions.</li>
-            <li><b>State-driven navigation</b> with <code>StackState</code>, so navigation is testable.</li>
-            <li><b>Cancellable effects:</b> debounced search on an injected clock, plus pagination.</li>
-            <li><b>Exhaustive tests</b> with <code>TestStore</code>, covering every state change and action.</li>
-          </ul>
-          <div class="tags"><span>TCA</span><span>@Dependency</span><span>Actors</span><span>TestStore</span></div>
-        </article>
-
-        <article class="project reveal">
-          <div class="project-top"><p class="project-kind">GraphQL · Apollo iOS</p><a target="_blank" rel="noopener" href="https://github.com/asimnajam/RickAndMortyApp">GitHub ↗</a></div>
-          <h3>RickAndMortyApp</h3>
-          <p>A SwiftUI client for the public Rick and Morty GraphQL API, with type-safe queries generated by Apollo iOS.</p>
-          <pre class="snippet"><code><b>query</b> Characters($page: Int!) {
+      <article class="project reveal">
+        <div class="project-top"><p class="project-kind">GraphQL · Apollo iOS</p><a target="_blank" rel="noopener" href="https://github.com/asimnajam/RickAndMortyApp">View on GitHub ↗</a></div>
+        <h3>RickAndMortyApp</h3>
+        <p>A SwiftUI client for the public Rick and Morty GraphQL API, with type-safe queries generated by Apollo iOS.</p>
+        <div class="project-grid">
+          <div>
+            <ul class="points">
+              <li><b>Type-safe networking</b> from <code>.graphql</code> operation files with Apollo codegen.</li>
+              <li><b>Repository boundary:</b> Apollo models are mapped to app-owned domain types, so views never see GraphQL.</li>
+              <li><b>Infinite pagination</b> in list and adaptive grid layouts, with a persisted layout preference.</li>
+              <li><b>MVVM + DI</b>, async/await, view-model unit tests, SwiftLint and SwiftFormat.</li>
+            </ul>
+            <pre class="snippet"><code><b>query</b> Characters($page: Int!) {
   characters(page: $page) {
     info { pages next }
     results { id name image }
   }
 }</code></pre>
+          </div>
+          <div class="phones">
+            <figure class="phone"><img src="images/rm-list.jpg" width="598" height="1300" loading="lazy" alt="Character list"><figcaption>List</figcaption></figure>
+            <figure class="phone"><img src="images/rm-grid.jpg" width="598" height="1300" loading="lazy" alt="Character grid"><figcaption>Grid</figcaption></figure>
+            <figure class="phone"><img src="images/rm-details.jpg" width="598" height="1300" loading="lazy" alt="Character details"><figcaption>Details</figcaption></figure>
+          </div>
+        </div>
+        <div class="tags"><span>GraphQL</span><span>Apollo iOS</span><span>MVVM</span><span>async/await</span><span>Swift Testing</span></div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-top"><p class="project-kind">The Composable Architecture</p><a target="_blank" rel="noopener" href="https://github.com/asimnajam/ShoppingApp">View on GitHub ↗</a></div>
+        <h3>ShoppingApp</h3>
+        <p>A SwiftUI shop built with TCA: a live product catalogue, search, product details and a persistent cart.</p>
+        <div class="project-grid">
           <ul class="points">
-            <li><b>Type-safe networking</b> from <code>.graphql</code> operation files with Apollo codegen.</li>
-            <li><b>Repository boundary:</b> Apollo models are mapped to app-owned domain types.</li>
-            <li><b>Infinite pagination</b> in list and adaptive grid layouts.</li>
-            <li><b>MVVM + DI</b>, async/await, view-model unit tests, SwiftLint and SwiftFormat.</li>
+            <li><b>Feature composition</b> with <code>Scope</code>, <code>forEach</code> and delegate actions.</li>
+            <li><b>State-driven navigation</b> with <code>StackState</code>, so navigation is testable.</li>
+            <li><b>Cancellable effects:</b> debounced search on an injected clock, plus pagination.</li>
+            <li><b>Exhaustive tests</b> with <code>TestStore</code>, covering every state change and action.</li>
+            <li><b>Actors</b> for thread-safe cart storage and an image pipeline with in-flight de-duplication.</li>
           </ul>
-          <div class="tags"><span>GraphQL</span><span>Apollo iOS</span><span>MVVM</span><span>async/await</span></div>
-        </article>
-      </div>
+          <div class="snippet-stack">
+            <pre class="snippet"><code>ShopFeature
+├─ ProductListFeature
+│  └─ Path: ProductDetailFeature
+└─ CartFeature</code></pre>
+            <pre class="snippet"><code><b>@Test func</b> quantityZeroRemovesItem() <b>async</b> {
+  <b>let</b> store = TestStore(initialState:
+    CartFeature.State(items: [apple, pear])
+  ) { CartFeature() }
+
+  <b>await</b> store.send(
+    .quantityChanged(id: apple.id, quantity: 0)
+  ) {
+    $0.items = [pear]
+  }
+  <b>await</b> store.receive(\.delegate.itemsChanged, [pear])
+}</code></pre>
+          </div>
+        </div>
+        <div class="tags"><span>TCA</span><span>@Dependency</span><span>Actors</span><span>TestStore</span><span>Swift Testing</span></div>
+      </article>
     </section>
 
     <section id="experience" class="section experience">
       <div class="section-head reveal"><p class="eyebrow">Experience</p><h2>Building iOS since 2015.</h2></div>
       <div class="timeline">
-        <article class="job reveal"><div class="date">2023 — now</div><div><h3>Grand Parade <span>Senior iOS Developer</span></h3><p>Production iOS development across SwiftUI, concurrency, legacy modernization, networking, observability (New Relic) and release ownership as rotating Release Captain. Led technical spikes and built AI-assisted engineering tooling.</p></div></article>
-        <article class="job reveal"><div class="date">2022 — 2023</div><div><h3>Motorola Solutions <span>Senior iOS Developer</span></h3><p>Enterprise iOS, MVC→MVVM migration, reusable UI, SOAP/WCF integrations, testing and CI/CD improvements.</p></div></article>
-        <article class="job reveal"><div class="date">2020 — 2022</div><div><h3>Foree <span>Senior iOS Developer</span></h3><p>Fintech and payments: secure communication, Realm persistence, API collaboration, UAT and production quality.</p></div></article>
-        <article class="job reveal"><div class="date">2015 — 2020</div><div><h3>Kiddom <span>iOS Developer → Senior iOS Developer</span></h3><p>EdTech for students, teachers and admins. Progressed from core UIKit development to end-to-end ownership, real-time communication and architecture work.</p></div></article>
+        <article class="job reveal"><div class="date">2023 — now</div><div><h3>Grand Parade (Evoke) <span>Senior iOS Developer</span></h3><p>Sportsbook and gaming apps across multiple markets. Built server-driven navigation as a shared Swift Package, helped migrate to Swift 6, led the push from 32% to 53% test coverage, built a real-time WebSocket client, and act as Release Captain and onboarding mentor.</p></div></article>
+        <article class="job reveal"><div class="date">2022 — 2023</div><div><h3>Motorola Solutions <span>Senior iOS Developer</span></h3><p>A public-safety app giving first responders real-time incident information. Migrated major features from MVC to MVVM with unit tests, delivered redesigned login and sign-up flows, and added SwiftLint and SwiftFormat checks to CI.</p></div></article>
+        <article class="job reveal"><div class="date">2020 — 2022</div><div><h3>Foree <span>Senior iOS Developer</span></h3><p>A consumer payments app for transfers, payments and messaging. Delivered split payments, maintained the payment SDK, secured the app with certificate pinning and AES/RSA encryption, and introduced SwiftLint, dependency injection and protocol-oriented design.</p></div></article>
+        <article class="job reveal"><div class="date">2015 — 2020</div><div><h3>Kiddom <span>iOS Developer → Senior iOS Developer</span></h3><p>A K-12 education platform for teachers, students and administrators. Integrated WebRTC audio/video calls and chat, led MVC → MVVM migration with ~60% coverage in migrated areas, and moved storyboards to programmatic UIKit with SnapKit. Promoted to Senior in 2019.</p></div></article>
       </div>
     </section>
 
     <section id="about" class="section about">
-      <div class="about-copy reveal"><p class="eyebrow">About</p><h2>Engineering beyond the feature.</h2><p>I’m an iOS engineer who enjoys the parts around feature delivery too: shaping API contracts, untangling architecture, improving testability, investigating production issues and making releases predictable.</p><p>I’ve worked with distributed product and engineering teams across consumer, fintech, enterprise and education products.</p></div>
-      <div class="stack reveal"><p>Core stack</p><ul><li>Swift / SwiftUI / UIKit</li><li>Swift Concurrency / Combine</li><li>MVVM / TCA / Clean Architecture / DI</li><li>REST / GraphQL (Apollo) / WebSockets</li><li>LLM APIs / Foundation Models</li><li>Realm / SwiftData</li><li>XCTest / Swift Testing / Instruments</li><li>SPM / CI/CD / TestFlight</li></ul></div>
+      <div class="about-copy reveal"><p class="eyebrow">About</p><h2>Engineering beyond the feature.</h2><p>I’m an iOS developer who enjoys the parts around feature delivery too: shaping API contracts, untangling architecture, raising test coverage, investigating production issues and making releases predictable.</p><p>I use agentic AI tools in my daily work, build LLM-driven features, and have worked with distributed teams on consumer, gaming, public-safety, fintech and education products.</p></div>
+      <div class="stack reveal"><p>Core stack</p><ul><li>Swift / SwiftUI / UIKit / Objective-C</li><li>Swift Concurrency / Combine</li><li>MVVM / TCA / Modular architecture</li><li>REST / GraphQL (Apollo) / WebSockets</li><li>Gemini API / Foundation Models / Evals</li><li>XCTest / Swift Testing / XCUITest</li><li>SPM / Fastlane / CI/CD / TestFlight</li><li>New Relic / Firebase Crashlytics</li></ul></div>
     </section>
 
     <section id="contact" class="contact section reveal">
       <p class="eyebrow">Let’s build something good</p><h2>Looking for my next iOS challenge.</h2>
-      <p>Interested in Senior iOS Engineer opportunities where product thinking and engineering quality both matter.</p>
+      <p>Interested in Senior iOS Developer roles where product thinking and engineering quality both matter. Based in Kraków and a Polish EU Blue Card holder, so no separate work permit is needed for qualifying roles in Poland.</p>
       <p class="contact-details"><a href="mailto:asim.najam021@gmail.com">asim.najam021@gmail.com</a><a href="tel:+48510971820">+48 510 971 820</a></p>
       <div class="actions"><a class="button primary" href="mailto:asim.najam021@gmail.com">Email me</a><a class="button" target="_blank" rel="noopener" href="Syed-Asim-Najam-CV.pdf">Download CV</a><a class="button" target="_blank" rel="noopener" href="https://github.com/asimnajam">GitHub ↗</a><a class="button" target="_blank" rel="noopener" href="https://www.linkedin.com/in/syed-asim-najam/">LinkedIn ↗</a></div>
     </section>
